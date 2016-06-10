@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<meta charset="UTF-8">
+</head>
+<body>
+  <div class="title-description">
+    <span class="product-name">
+      Luna™
+    </span>
+    <p class="product-description-short">
+      A safety gate never left out in the dark.
+    </p>
+    <p class="product-description-full">
+      The award-winning technology includes a motion-activated LED light that illuminates when you pass by. So now you don’t have to worry about the dark – Luna has you covered!
+    </p>
+    <div class="buy-now">
+      BUY NOW
+    </div>
+  </div>
+  <div class="product-image">
+    <div class="image">
+      <img src="./assets/luna-transparency-2.png">
+    </div>
+    <div class="rotator"></div>
+  </div>
+  <div class="view-sitch">
+    <a class="tres60" href="#">360 option</a>
+    <a class="full" href="#">Full image option</a>
+  </div>
+  <div class="theme-switch">
+    <p>Try the Motion Activated Light Sensor</p>
+    <a href="#" class="day_theme">Day</a>
+    <a href="#" class="night_theme">Night</a>
+  </div>
+      <img src="./assets/luna-transparency-2.png">
+      <img src="./assets/luna-transparency-2.png">
+      <img src="./assets/luna-transparency-2.png">
+      <img src="./assets/luna-transparency-2.png">
+      <img src="./assets/luna-transparency-2.png">
+
+</body>
+</html>
+
+<style type="text/css">
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+/*////////////////////////////title and subs///////////////////////////////////////////////*/
+
+/*////////////title////////////////*/
+.product-name {
+  display: block;
+}
+
+/*////////////title////////////////*/
+
+/*////////////////////////////title and subs ///////////////////////////////////////////////*/
+
+/*////////////////////////////360 and full switchs///////////////////////////////////////////////*/
+.view-sitch a{
+  
+    display: inline-block;
+    font-size: 0;
+    height: 45px;
+    margin: 0 10px;
+    width: 45px;
+}
+
+.view-sitch a.tres60 {
+  background: url("./assets/360-icon.png") center center no-repeat;
+  background-size: 100%;
+}
+
+.view-sitch a.full {
+  background: url("./assets/fullscreen-icon.png") center center no-repeat;
+  background-size: 100%;
+}
+
+.buy-now {
+  color: #8486d4;
+  font-size: 22px;
+  text-align: center;
+  border: 2px solid #8486d4;
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  margin: 30px 0;
+
+}
+
+/*////////////////////////////360 and full switchs///////////////////////////////////////////////*/
+
+/*////////////////////////////theme switchs///////////////////////////////////////////////*/
+
+.theme-switch {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.theme-switch p {
+    width: 165px;
+}
+
+.day_theme, .night_theme {
+  cursor: pointer;
+  float: left;
+  font-size: 1.4em;
+  padding-top: 75px;
+  position: relative;
+  width: 150px;
+}
+
+.day_theme:hover, .day_theme:focus, .day_theme:active, .night_theme:hover, .night_theme:focus, .night_theme:active,{ 
+  text-decoration: none;
+}
+
+.day_theme:before, .night_theme:before {
+  left: 0;
+  padding: 5px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+} 
+
+.day_theme {
+  color: white;
+}
+
+.day_theme:before {
+  border: 2px solid #e6e7e8;
+  border-radius: 8px 0 0 8px;
+  content: url("./assets/sun-night.png");
+  background-color: white;
+  text-align: center;
+}
+        
+.night_theme {
+  color: #8486d4;
+}
+
+.night_theme:before{
+  background: #000000;
+  border: 2px solid white;
+  border-radius: 0 8px 8px 0;
+  content: url("./assets/moon-night.png");
+  text-align: center;
+}
+/*////////////////////////////product image///////////////////////////////////////////////*/
+
+
+.product-image .image img{
+  max-width: 725px;
+  max-height: 777px;
+  width: 100%
+
+}
+/*////////////////////////////product image///////////////////////////////////////////////*/
+
+@media screen and (max-width: 1300px) {
+  .title-description {
+    max-width: 40%;
+    padding: 100px 13% 20px 0;
+    float: right;
+    display: inline-block;
+  }
+
+  .product-description-short {
+    font-size: 33px;
+  }
+
+  .product-description-full {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .product-name {
+    font-size: 80px;
+  }
+
+  .product-image {
+    display: inline-block;
+    float: left;
+    width: 60%;
+    padding: 100px 20px 20px;
+  }
+
+  .product-image .image {
+    max-height: 777px;
+    width: 100%;
+  }
+
+  .view-sitch {
+    display: block;
+    clear: both;
+    width: 150px;
+    margin-left: 24%;
+  }
+
+  .theme-switch {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 650px;
+    text-align: center;
+  }
+
+  .theme-switch p {
+    width: 165px;
+    margin-left: 35px;
+  }
+
+  .theme-switch a {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+/*////////////////////////////title and subs///////////////////////////////////////////////*/
+  .title-description {
+    padding: 20px 235px 0 20px;
+    /*padding-right: 235px;*/
+    /*padding-left: 20px;*/
+    display: block;
+    max-width: 100%;
+  }
+
+  .product-name {
+    font-size: 80px;
+  }
+
+  .product-description-short{
+    font-size: 28px;
+  }
+
+  .product-description-full {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .buy-now {
+    display: none;
+  }
+/*////////////////////////////product image///////////////////////////////////////////////*/
+  .product-image {
+    max-width: 60%;
+    display: inline-block;
+    padding: 0;
+    width: 100%
+  }
+
+/*////////////////////////////theme switch///////////////////////////////////////////////*/
+  .theme-switch {
+    max-width: 250px;
+    display: inline-block;
+    position: absolute;
+    top: 300px;
+    right: 7%;
+    text-align: center;
+  }
+
+  .theme-switch p {
+    width: 165px;
+    text-align: center;
+    margin-left: 16%;
+  }
+
+  .theme-switch a{
+    width: 50%;
+  }
+
+/*////////////////////////////view switch///////////////////////////////////////////////*/
+ .view-sitch {
+    width: auto;
+    position: absolute;
+    right: 0;
+    margin-right: 20%;
+    bottom: 5%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+/*////////////////////////////title and subs///////////////////////////////////////////////*/
+  .title-description {
+    padding-right: 20px;
+  }
+  .product-name{
+    font-size: 32px;
+  }
+
+  .product-description-short{
+    font-size: 22px;
+    /*padding-left: 20px;*/
+    padding-right: 60px;
+  }
+
+  .product-description-full {
+    font-size: 16px;
+    padding-right: 20px;
+    /*padding-left: 20px;*/
+  }
+
+  /*////////////////////////////product image///////////////////////////////////////////////*/
+  .product-image {
+    max-width: 75%;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+/*////////////////////////////360 and full switchs///////////////////////////////////////////////*/
+
+
+  .view-sitch {
+    width: auto;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    margin-right: 0;
+  }   
+
+  .view-sitch a {
+    display: block;
+  }
+/*////////////////////////////theme switchs///////////////////////////////////////////////*/
+  .theme-switch{
+    font-size: 16px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 0;
+  }
+
+  .theme-switch p {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .day_theme, .night_theme {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .theme-switch {
+    max-width: 180px;
+  }
+
+  .theme-switch a {
+    width: 50%;
+  }
+
+  .theme-switch p {
+    width: 165px;
+    margin-left: 0;
+  }
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
