@@ -156,14 +156,17 @@ a {
 
 
 .product-image .image img{
-  max-width: 725px;
-  max-height: 777px;
+  /*max-width: 725px;*/
   width: 100%
 
 }
 /*////////////////////////////product image///////////////////////////////////////////////*/
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1920px) {
+  .image img{
+    max-width: 725px;
+  }
+
   .title-description {
     max-width: 40%;
     padding: 100px 13% 20px 0;
@@ -188,11 +191,10 @@ a {
     display: inline-block;
     float: left;
     width: 60%;
-    padding: 100px 20px 20px;
+    padding: 100px 80px 20px 20px;
   }
 
   .product-image .image {
-    max-height: 777px;
     width: 100%;
   }
 
@@ -200,14 +202,14 @@ a {
     display: block;
     clear: both;
     width: 150px;
-    margin-left: 24%;
+    margin-left: 20%;
   }
 
   .theme-switch {
     width: 40%;
     position: absolute;
     right: 0;
-    top: 650px;
+    top: 600px;
     text-align: center;
   }
 
@@ -220,6 +222,34 @@ a {
     width: 120px;
   }
 }
+
+
+
+@media screen and (max-width: 1600px) {
+
+  .product-image {
+    display: inline-block;
+    float: left;
+    width: 60%;
+    padding: 100px 20px 20px;
+  }
+
+  .product-image .image {
+    max-height: 777px;
+    width: 100%;
+  }
+
+  .image img{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .theme-switch {
+    top: 620px;
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
 /*////////////////////////////title and subs///////////////////////////////////////////////*/
